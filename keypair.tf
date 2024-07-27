@@ -6,6 +6,6 @@ resource "aws_key_pair" "aigerim" {
 
 variable "key_name" {
     type = string 
-    default = "terraformgithun"
+    default = "terraformgithub"
   
 }
