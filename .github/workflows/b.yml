@@ -1,4 +1,3 @@
-
 name: Terraform Workflow
 
 on:
@@ -21,7 +20,8 @@ jobs:
 
     - name: Set up Terraform
       uses: hashicorp/setup-terraform@v1
-    
+      with:
+        terraform_version: ${{ env.TF_VERSION }}
 
     - name: Configure AWS credentials
       run: |
